@@ -1,0 +1,120 @@
+.clinicPage {
+  width: 100%;
+
+  h1 {
+  }
+
+  h2 {
+  }
+
+  .clinicDropdown {
+    margin: 5vh;
+
+    #dropdown {
+      width: 100%;
+      padding: 1vh;
+      border: none;
+      color: #fff;
+      text-align: center;
+      font-family: $title-font;
+      font-variant: small-caps;
+      @include blue-to-pink-bg;
+      @include fluid-type(320px, 1200px, 30px, 40px);
+    }
+  }
+
+  #dropOpt {
+    font-family: $body-font;
+    font-weight: bold;
+    font-variant: normal;
+    background-color: #e0eeee;
+    color: #778899;
+    @include fluid-type(320px, 1200px, 20px, 30px);
+  }
+
+  .clinicsDiv {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+
+    .clinicContainer {
+      flex: 1 1 45%;
+      align-self: start;
+      text-align: center;
+      margin: 1vw 0.5vw 2vw 0.5vw;
+      @include fluid-type(320px, 1200px, 18px, 22px);
+
+      .clinicNameContainer {
+        font-family: $title-font;
+        font-variant: small-caps;
+        color: white;
+        padding: 1vw;
+        @include blue-to-pink-bg;
+        @include fluid-type(320px, 1200px, 22px, 30px);
+      }
+      .clinicImageContainer {
+        margin: 3vh auto 0;
+        width: 30%;
+        height: 30%;
+        overflow: hidden;
+        line-height: normal;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      .clinicLinkContainer {
+        display: flex;
+        margin: 10vh auto;
+        width: 80%;
+        justify-content: space-between;
+        @include fluid-type(320px, 1200px, 18px, 22px);
+
+        .clinicWebsite {
+          color: $link-colour;
+          text-decoration: none;
+          @include transition-time;
+          font-weight: bolder;
+          &:visited {
+            color: $link-colour;
+          }
+          &:hover {
+            color: $link-highlight;
+          }
+        }
+      }
+
+      .clinicAddress {
+        a {
+          color: $link-colour;
+          text-decoration: none;
+          @include transition-time;
+          font-weight: bolder;
+          &:visited {
+            color: $link-colour;
+          }
+          &:hover {
+            color: $link-highlight;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .clinicPage {
+    .clinicsDiv {
+      width: 100%;
+      flex-direction: column;
+      .clinicContainer {
+        width: 100%;
+      }
+    }
+  }
+}

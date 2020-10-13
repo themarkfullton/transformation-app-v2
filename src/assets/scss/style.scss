@@ -1,4 +1,4 @@
-@import "variables", "navbar";
+@import "variables", "navbar", "clinics";
 
 .App {
   width: 100vw;
@@ -10,4 +10,10 @@
 .content {
   margin: 0 auto;
   width: 70%;
+}
+
+@media (max-width: 900px) {
+  .content {
+    width: 90%;
+  }
 }

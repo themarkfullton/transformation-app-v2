@@ -21,7 +21,7 @@ class Navbar extends React.Component {
                     className={this.state.open ? "navButton open" : "navButton"}
                     onClick={this.toggleMenu}
                 >
-                    <p>Navigation</p>
+                    <i className="fas fa-compass"></i>
                 </div>
                 <div
                     className={this.state.open ? "navbar open" : "navbar"}
@@ -147,7 +147,7 @@ class Navbar extends React.Component {
                   className="menuNavLink"
                   onClick={this.toggleMenu}
                 >
-                  Close Navigation
+                  <i className="fas fa-window-close"></i>
                 </NavLink>
               </li>
 

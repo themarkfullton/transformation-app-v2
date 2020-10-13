@@ -140,10 +140,6 @@
         "abbrev": "ND"
     },
     {
-        "name": "Northern Mariana Islands",
-        "abbrev": "MP"
-    },
-    {
         "name": "Ohio",
         "abbrev": "OH"
     },
@@ -186,10 +182,6 @@
     {
         "name": "Vermont",
         "abbrev": "VT"
-    },
-    {
-        "name": "Virgin Islands",
-        "abbrev": "VI"
     },
     {
         "name": "Virginia",

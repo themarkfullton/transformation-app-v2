@@ -20,9 +20,6 @@
   font-weight: bolder;
   font-variant: small-caps;
   color: #ff33cd;
-  background-color: #fff;
-  border: 5px double #ff33cd;
-  border-top: none;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
@@ -45,15 +42,29 @@
 
 .navbarWrapper .navButton:hover {
   color: #06d2fd;
-  border: 5px double #06d2fd;
-  border-top: none;
+}
+
+.navbarWrapper .navButton:hover {
+  font-size: 25px;
+}
+
+@media screen and (min-width: 320px) {
+  .navbarWrapper .navButton:hover {
+    font-size: calc( 25px + 5 * ((100vw - 320px) / 880));
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .navbarWrapper .navButton:hover {
+    font-size: 30px;
+  }
 }
 
 .navbarWrapper .navButton.open {
   display: none;
 }
 
-.navbarWrapper .headerNavbar {
+.navbarWrapper .navbar {
   position: fixed;
   top: 0;
   left: 0;
@@ -62,11 +73,11 @@
   visibility: hidden;
 }
 
-.navbarWrapper .headerNavbar.open {
+.navbarWrapper .navbar.open {
   visibility: visible;
 }
 
-.navbarWrapper .headerNavbar .menuNavContainer {
+.navbarWrapper .navbar .menuNavContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -90,24 +101,24 @@
   transition: all 0.5s;
 }
 
-.navbarWrapper .headerNavbar .menuNavContainer.open {
+.navbarWrapper .navbar .menuNavContainer.open {
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
 
-.navbarWrapper .headerNavbar .menuNavContainer .menuNavItem {
+.navbarWrapper .navbar .menuNavContainer .menuNavItem {
   -webkit-transform: translateX(100vw);
           transform: translateX(100vw);
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 
-.navbarWrapper .headerNavbar .menuNavContainer .menuNavItem.open {
+.navbarWrapper .navbar .menuNavContainer .menuNavItem.open {
   -webkit-transform: translateX(0);
           transform: translateX(0);
 }
 
-.navbarWrapper .headerNavbar .menuNavContainer .menuNavItem.open .menuNavLink {
+.navbarWrapper .navbar .menuNavContainer .menuNavItem.open .menuNavLink {
   display: inline-block;
   font-variant: small-caps;
   padding: 0.7rem 0;
@@ -119,24 +130,255 @@
   transition: all 0.5s;
 }
 
-.navbarWrapper .headerNavbar .menuNavContainer .menuNavItem.open .menuNavLink {
+.navbarWrapper .navbar .menuNavContainer .menuNavItem.open .menuNavLink {
   font-size: 25px;
 }
 
 @media screen and (min-width: 320px) {
-  .navbarWrapper .headerNavbar .menuNavContainer .menuNavItem.open .menuNavLink {
+  .navbarWrapper .navbar .menuNavContainer .menuNavItem.open .menuNavLink {
     font-size: calc( 25px + 5 * ((100vw - 320px) / 880));
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .navbarWrapper .headerNavbar .menuNavContainer .menuNavItem.open .menuNavLink {
+  .navbarWrapper .navbar .menuNavContainer .menuNavItem.open .menuNavLink {
     font-size: 30px;
   }
 }
 
-.navbarWrapper .headerNavbar .menuNavContainer .menuNavItem.open .menuNavLink:hover {
+.navbarWrapper .navbar .menuNavContainer .menuNavItem.open .menuNavLink:hover {
   color: #06d2fd;
+}
+
+.navbarWrapper .navbar .menuNavContainer .menuNavItem.open .menuNavLink:hover {
+  font-size: 30px;
+}
+
+@media screen and (min-width: 320px) {
+  .navbarWrapper .navbar .menuNavContainer .menuNavItem.open .menuNavLink:hover {
+    font-size: calc( 30px + 5 * ((100vw - 320px) / 880));
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .navbarWrapper .navbar .menuNavContainer .menuNavItem.open .menuNavLink:hover {
+    font-size: 35px;
+  }
+}
+
+.clinicPage {
+  width: 100%;
+}
+
+.clinicPage .clinicDropdown {
+  margin: 5vh;
+}
+
+.clinicPage .clinicDropdown #dropdown {
+  width: 100%;
+  padding: 1vh;
+  border: none;
+  color: #fff;
+  text-align: center;
+  font-family: "Candal", sans-serif;
+  font-variant: small-caps;
+  background-image: -webkit-gradient(linear, left top, right top, from(#ff33cd), to(#06d2fd));
+  background-image: linear-gradient(to right, #ff33cd, #06d2fd);
+}
+
+.clinicPage .clinicDropdown #dropdown {
+  font-size: 30px;
+}
+
+@media screen and (min-width: 320px) {
+  .clinicPage .clinicDropdown #dropdown {
+    font-size: calc( 30px + 10 * ((100vw - 320px) / 880));
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clinicPage .clinicDropdown #dropdown {
+    font-size: 40px;
+  }
+}
+
+.clinicPage #dropOpt {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-variant: normal;
+  background-color: #e0eeee;
+  color: #778899;
+}
+
+.clinicPage #dropOpt {
+  font-size: 20px;
+}
+
+@media screen and (min-width: 320px) {
+  .clinicPage #dropOpt {
+    font-size: calc( 20px + 10 * ((100vw - 320px) / 880));
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clinicPage #dropOpt {
+    font-size: 30px;
+  }
+}
+
+.clinicPage .clinicsDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.clinicPage .clinicsDiv .clinicContainer {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 45%;
+          flex: 1 1 45%;
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+  text-align: center;
+  margin: 1vw 0.5vw 2vw 0.5vw;
+}
+
+.clinicPage .clinicsDiv .clinicContainer {
+  font-size: 18px;
+}
+
+@media screen and (min-width: 320px) {
+  .clinicPage .clinicsDiv .clinicContainer {
+    font-size: calc( 18px + 4 * ((100vw - 320px) / 880));
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clinicPage .clinicsDiv .clinicContainer {
+    font-size: 22px;
+  }
+}
+
+.clinicPage .clinicsDiv .clinicContainer .clinicNameContainer {
+  font-family: "Candal", sans-serif;
+  font-variant: small-caps;
+  color: white;
+  padding: 1vw;
+  background-image: -webkit-gradient(linear, left top, right top, from(#ff33cd), to(#06d2fd));
+  background-image: linear-gradient(to right, #ff33cd, #06d2fd);
+}
+
+.clinicPage .clinicsDiv .clinicContainer .clinicNameContainer {
+  font-size: 22px;
+}
+
+@media screen and (min-width: 320px) {
+  .clinicPage .clinicsDiv .clinicContainer .clinicNameContainer {
+    font-size: calc( 22px + 8 * ((100vw - 320px) / 880));
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clinicPage .clinicsDiv .clinicContainer .clinicNameContainer {
+    font-size: 30px;
+  }
+}
+
+.clinicPage .clinicsDiv .clinicContainer .clinicImageContainer {
+  margin: 3vh auto 0;
+  width: 30%;
+  height: 30%;
+  overflow: hidden;
+  line-height: normal;
+}
+
+.clinicPage .clinicsDiv .clinicContainer .clinicImageContainer img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.clinicPage .clinicsDiv .clinicContainer .clinicLinkContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 10vh auto;
+  width: 80%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.clinicPage .clinicsDiv .clinicContainer .clinicLinkContainer {
+  font-size: 18px;
+}
+
+@media screen and (min-width: 320px) {
+  .clinicPage .clinicsDiv .clinicContainer .clinicLinkContainer {
+    font-size: calc( 18px + 4 * ((100vw - 320px) / 880));
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clinicPage .clinicsDiv .clinicContainer .clinicLinkContainer {
+    font-size: 22px;
+  }
+}
+
+.clinicPage .clinicsDiv .clinicContainer .clinicLinkContainer .clinicWebsite {
+  color: #ff33cd;
+  text-decoration: none;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  font-weight: bolder;
+}
+
+.clinicPage .clinicsDiv .clinicContainer .clinicLinkContainer .clinicWebsite:visited {
+  color: #ff33cd;
+}
+
+.clinicPage .clinicsDiv .clinicContainer .clinicLinkContainer .clinicWebsite:hover {
+  color: #06d2fd;
+}
+
+.clinicPage .clinicsDiv .clinicContainer .clinicAddress a {
+  color: #ff33cd;
+  text-decoration: none;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  font-weight: bolder;
+}
+
+.clinicPage .clinicsDiv .clinicContainer .clinicAddress a:visited {
+  color: #ff33cd;
+}
+
+.clinicPage .clinicsDiv .clinicContainer .clinicAddress a:hover {
+  color: #06d2fd;
+}
+
+@media (max-width: 1000px) {
+  .clinicPage .clinicsDiv {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .clinicPage .clinicsDiv .clinicContainer {
+    width: 100%;
+  }
 }
 
 .App {
@@ -166,5 +408,11 @@
 .content {
   margin: 0 auto;
   width: 70%;
+}
+
+@media (max-width: 900px) {
+  .content {
+    width: 90%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

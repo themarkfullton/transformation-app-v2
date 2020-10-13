@@ -7,7 +7,7 @@ const ClinicResource = (props) => {
 
     useEffect(() => {
         setClinics(props.resources);
-    }, []);
+    }, [props.resources]);
 
     useEffect(() => {
         setFilteredClinics(clinics.filter((clinics) => clinics.state.toLowerCase().includes(search.toLowerCase())
@@ -26,19 +26,20 @@ const ClinicResource = (props) => {
                 <h2>Select your state to see Trans-Friendly clinics in your area!</h2>
 
                 <div className="clinicDropdown">
-                    <select id="dropdown" onChange={(e) => setSearch(e)}>
-                        {props.states.map((state) => {
+                    <select id="dropdown" onChange={(e) => setSearch(e.target.value) }>
+                        {props.states.map((state, idx) => {
                             return(
-                                <option value={state.abbrev}>{state.name}</option>
+                                <option id="dropOpt" key={idx} value={state.abbrev}>{state.name}</option>
                             )
                         })}
                     </select>
                 </div>
 
-                {filteredClinics.map((resource, idx) => {
+            <div className="clinicsDiv">
+            {filteredClinics.map((resource, idx) => {
+                    var googleMapQuery = `https://maps.google.com/?q=${resource.street} ${resource.city} ${resource.state} ${resource.zip}`;
 
                     return (
-                        <>
             <div className="clinicContainer" key={idx}>
                 <div className="clinicNameContainer">
                 <p>{resource.name}</p>
@@ -48,23 +49,23 @@ const ClinicResource = (props) => {
                 </div>
                 <div className="clinicLinkContainer">
                 <p>
-                    <a href={resource.website} target="_blank" className="placeWebsite">
+                    <a href={resource.website} target="_blank" className="clinicWebsite">
                     Website Link
                     </a>
                 </p>
                 <p>{resource.phone}</p>
-                <p>
-                    {resource.street}, {resource.city}, {resource.state}, {resource.zip}
-                </p>
+                </div>    
+                <div className="clinicAddress"><a target="_blank" href={googleMapQuery}>
+                    {resource.street}, {resource.city}, {resource.state}, {resource.zip} </a>
                 </div>
                 <div className="clinicDescription">
                 <p>{resource.description}</p>
                 </div>
                 <div className="clinicDivider"></div>
             </div>
-            </>
                     );
                 })}
+                </div>
             </div>
     )
 }
