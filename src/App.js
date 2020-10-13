@@ -1,12 +1,14 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
+import FruitSelector from './components/Dropdown';
+
 import "./assets/css/reset.css";
 
 function App() {
   return (
     <div className="App">
-      <Router>
+      {/* <Router>
         <Switch>
           <Route exact path="/" component={Splash} />
           <Route exact path="/about" component={About} />
@@ -18,7 +20,8 @@ function App() {
           <Route exact path="/travel" component={Travel} />
           <Route component={NotFound} />
         </Switch>
-      </Router>
+      </Router> */}
+      <FruitSelector />
     </div>
   );
 }
