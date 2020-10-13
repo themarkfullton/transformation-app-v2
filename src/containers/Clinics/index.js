@@ -1,10 +1,10 @@
 import React from "react";
 import API from "../../utils/API";
 import ClinicResource from "../../components/ClinicResource";
+import AllStates from "./states.json";
 
 class Clinics extends React.Component {
     state = {
-        location: "",
         resources: [],
     };
 
@@ -16,8 +16,9 @@ class Clinics extends React.Component {
 
     render() {
         return (
-            <div className="resourceWrapper">
+            <div className="clinicsWrapper">
                 <ClinicResource
+                    states={AllStates}
                     clinics={this.state.resources} />
             </div>
         )
