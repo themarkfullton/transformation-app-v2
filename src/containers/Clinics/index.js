@@ -10,6 +10,7 @@ class Clinics extends React.Component {
 
     componentDidMount() {
         API.getClinics().then((res) => {
+            console.log(res);
             this.setState({ resources: res.data });
         }).catch((err) => this.setState({ error: err.items }));
     }
@@ -19,7 +20,7 @@ class Clinics extends React.Component {
             <div className="clinicsWrapper">
                 <ClinicResource
                     states={AllStates}
-                    clinics={this.state.resources} />
+                    resources={this.state.resources} />
             </div>
         )
     }

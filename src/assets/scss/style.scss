@@ -1,0 +1,13 @@
+@import "variables", "navbar";
+
+.App {
+  width: 100vw;
+  margin: 0px;
+  background-color: $background-colour;
+  @include body-text;
+}
+
+.content {
+  margin: 0 auto;
+  width: 70%;
+}

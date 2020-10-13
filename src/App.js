@@ -12,13 +12,13 @@ import Clinics from "./containers/Clinics";
 import Fashion from "./containers/Fashion";
 import Fitness from "./containers/Fitness";
 import History from "./containers/History";
-import Identity from "./containers/History";
 import Identity from "./containers/Identity";
 import Travel from "./containers/Travel";
 import NotFound from "./containers/NotFound";
 
 //==========| Stylesheets \===================>
 import "./assets/css/reset.css";
+import "./assets/css/style.css";
 
 function App() {
   return (

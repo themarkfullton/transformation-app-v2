@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 const ClinicResource = (props) => {
     const [clinics, setClinics] = useState([]);
@@ -28,7 +28,9 @@ const ClinicResource = (props) => {
                 <div className="clinicDropdown">
                     <select id="dropdown" onChange={(e) => setSearch(e)}>
                         {props.states.map((state) => {
-                            <option value={state.abbrev}>{state.name}</option>
+                            return(
+                                <option value={state.abbrev}>{state.name}</option>
+                            )
                         })}
                     </select>
                 </div>
@@ -42,7 +44,7 @@ const ClinicResource = (props) => {
                 <p>{resource.name}</p>
                 </div>
                 <div className="clinicImageContainer">
-                <img src={resouce.image} alt={resource.state} />
+                <img src={resource.image} alt={resource.state} />
                 </div>
                 <div className="clinicLinkContainer">
                 <p>

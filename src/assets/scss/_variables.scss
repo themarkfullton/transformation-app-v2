@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Candal&family=Montserrat&display=swap");
+
+$title-font: "Candal", sans-serif;
+$body-font: "Montserrat", sans-serif;
+$background-colour: #fff;
+$link-colour: #ff33cd;
+$link-highlight: #06d2fd;
+$logo-subheader-colour: #551a8b;
+
+@mixin blue-to-pink-bg() {
+  background-image: linear-gradient(to right, $link-colour, $link-highlight);
+}
+
+@mixin transition-time() {
+  transition: all 0.5s;
+}
+
+@mixin header-text(
+  $direction: 180deg,
+  $colour-from: #06d2fd,
+  $colour-to: #ff33cd
+) {
+  background: -webkit-linear-gradient($direction, $colour-from, $colour-to);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  display: inline-block;
+  font-variant: small-caps;
+  font-family: $title-font;
+  line-height: normal;
+  margin-bottom: 1rem;
+}
+
+@mixin header-text-reverse(
+  $direction: 180deg,
+  $colour-from: #ff33cd,
+  $colour-to: #06d2fd
+) {
+  background: -webkit-linear-gradient($direction, $colour-from, $colour-to);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  display: inline-block;
+  font-variant: small-caps;
+  font-family: $title-font;
+  line-height: normal;
+  margin-bottom: 1rem;
+}
+
+@mixin just-the-gradient(
+  $direction: 180deg,
+  $colour-from: #06d2fd,
+  $colour-to: #ff33cd
+) {
+  background: -webkit-linear-gradient($direction, $colour-from, $colour-to);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+@mixin body-text() {
+  @include fluid-type(320px, 1200px, 16px, 24px);
+  font-family: $body-font;
+  line-height: 1.8em;
+}
+
+@function strip-unit($value) {
+  @return $value / ($value * 0 + 1);
+}
+
+@mixin fluid-type($min-vw, $max-vw, $min-font-size, $max-font-size) {
+  $u1: unit($min-vw);
+  $u2: unit($max-vw);
+  $u3: unit($min-font-size);
+  $u4: unit($max-font-size);
+
+  @if $u1 == $u2 and $u1 == $u3 and $u1 == $u4 {
+    & {
+      font-size: $min-font-size;
+      @media screen and (min-width: $min-vw) {
+        font-size: calc(
+          #{$min-font-size} + #{strip-unit($max-font-size - $min-font-size)} *
+            ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)})
+        );
+      }
+      @media screen and (min-width: $max-vw) {
+        font-size: $max-font-size;
+      }
+    }
+  }
+}

@@ -1,0 +1,91 @@
+.navbarWrapper {
+  position: fixed;
+  z-index: 9;
+  width: 100%;
+  padding: 1rem;
+
+  .navButton {
+    position: absolute;
+    display: inline;
+    z-index: 9;
+    right: 6rem;
+    top: 0rem;
+    width: 20vw;
+    padding: 0.5vw 0;
+    cursor: pointer;
+    text-align: center;
+    font-family: $title-font;
+    font-weight: bolder;
+    font-variant: small-caps;
+    color: $link-colour;
+    background-color: #fff;
+    border: 5px double $link-colour;
+    border-top: none;
+    @include transition-time;
+    @include fluid-type(320px, 1200px, 16px, 25px);
+
+    &:hover {
+      color: $link-highlight;
+      border: 5px double $link-highlight;
+      border-top: none;
+    }
+
+    &.open {
+      display: none;
+    }
+  }
+  .headerNavbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    opacity: 0.98;
+    visibility: hidden;
+
+    &.open {
+      visibility: visible;
+    }
+
+    .menuNavContainer {
+      display: flex;
+      flex-flow: column wrap;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background-color: #fff;
+      list-style-type: none;
+      padding-right: 1rem;
+      transform: translateY(-100%);
+      @include transition-time;
+
+      &.open {
+        transform: translateY(0);
+      }
+
+      .menuNavItem {
+        transform: translateX(100vw);
+        @include transition-time;
+
+        &.open {
+          transform: translateX(0);
+
+          .menuNavLink {
+            display: inline-block;
+            @include fluid-type(320px, 1200px, 25px, 30px);
+            font-variant: small-caps;
+            padding: 0.7rem 0;
+            font-weight: 300;
+            font-family: $title-font;
+            text-decoration: none;
+            color: $link-colour;
+            @include transition-time;
+
+            &:hover {
+              color: $link-highlight;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,8 +1,8 @@
 import React from "react";
-import mtf from "";
-import ftm from "";
-import nb from "";
-import na from "";
+// import mtf from "";
+// import ftm from "";
+// import nb from "";
+// import na from "";
 
 const Resource = (props) => {
     return props.resources.length === 0 ? (
@@ -18,20 +18,20 @@ const Resource = (props) => {
                 {props.resources.map((resource) => {
                     var resourceImage;
 
-                    switch (resource.target) {
-                        case "mtf":
-                            resourceImage = mtf;
-                            break;
-                        case "ftm":
-                            resourceImage = ftm;
-                            break;
-                        case "nb":
-                            resourceImage = nb;
-                            break;
-                        default:
-                            resourceImage = na;
-                            break;
-                    }
+                    // switch (resource.target) {
+                    //     case "mtf":
+                    //         resourceImage = mtf;
+                    //         break;
+                    //     case "ftm":
+                    //         resourceImage = ftm;
+                    //         break;
+                    //     case "nb":
+                    //         resourceImage = nb;
+                    //         break;
+                    //     default:
+                    //         resourceImage = na;
+                    //         break;
+                    // }
 
                     return (
                         <div className="resourceContainer">
