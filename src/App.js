@@ -1,6 +1,9 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
+//==========| Components \===================>
+import Navbar from "./components/Navbar";
+
 //==========| Containers \===================>
 import Splash from "./containers/Splash";
 import About from "./containers/About";
@@ -21,6 +24,8 @@ function App() {
   return (
     <div className="App">
       <Router>
+        <Navbar />
+        <div className="content">
         <Switch>
           <Route exact path="/" component={Splash} />
           <Route exact path="/about" component={About} />
@@ -32,7 +37,8 @@ function App() {
           <Route exact path="/identity" component={Identity} />
           <Route exact path="/travel" component={Travel} />
           <Route component={NotFound} />
-        </Switch>
+          </Switch>
+          </div>
       </Router>
     </div>
   );
