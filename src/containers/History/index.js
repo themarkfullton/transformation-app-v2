@@ -2,13 +2,13 @@ import React from "react";
 import API from "../../utils/API";
 import Resource from "../../components/Resource";
 
-class Travel extends React.Component {
+class History extends React.Component {
     state = {
         resources: [],
     };
 
     componentDidMount() {
-        API.getTravel().then((res) => {
+        API.getHistory().then((res) => {
             this.setState({ resources: res.data });
         }).catch((err) => this.setState({ error: err.items }));
     }
@@ -17,12 +17,12 @@ class Travel extends React.Component {
         return (
             <div className="resourceWrapper">
                 <Resource
-                    title="Travel"
-                    slogan="Travel Slogan Here"
+                    title="History"
+                    slogan="History Slogan Here"
                     resources={this.state.resources} />
             </div>
         )
     }
 }
 
-export default Travel;
+export default History;
