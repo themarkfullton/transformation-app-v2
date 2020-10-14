@@ -8,6 +8,7 @@ import Footer from "./components/Footer";
 //==========| Containers \===================>
 import Splash from "./containers/Splash";
 import About from "./containers/About";
+import Suggest from "./containers/Suggest";
 import Clinics from "./containers/Clinics";
 import Fashion from "./containers/Fashion";
 import Fitness from "./containers/Fitness";
@@ -29,6 +30,7 @@ function App() {
         <Switch>
           <Route exact path="/" component={Splash} />
           <Route exact path="/about" component={About} />
+          <Route exact path="/suggest" component={Suggest} />
           <Route exact path="/clinics" component={Clinics} />
           <Route exact path="/fashion" component={Fashion} />
           <Route exact path="/fitness" component={Fitness} />
