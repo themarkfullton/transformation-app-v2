@@ -18,7 +18,7 @@ class Fashion extends React.Component {
             <div className="resourceWrapper">
                 <Resource
                     title="Fashion"
-                    slogan="Fashion Slogan Here"
+                    slogan="Tips and tricks to help you better present your true self!"
                     resources={this.state.resources} />
             </div>
         )

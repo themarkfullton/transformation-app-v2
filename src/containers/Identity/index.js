@@ -18,7 +18,8 @@ class Identity extends React.Component {
             <div className="resourceWrapper">
                 <Resource
                     title="Identity"
-                    slogan="Identity Slogan Here"
+                    slogan="You know who you are; here's how to get the rest of the world in on the
+        loop."
                     resources={this.state.resources} />
             </div>
         )

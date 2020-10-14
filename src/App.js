@@ -7,7 +7,6 @@ import Navbar from "./components/Navbar";
 //==========| Containers \===================>
 import Splash from "./containers/Splash";
 import About from "./containers/About";
-import APIPage from "./containers/APIPage";
 import Clinics from "./containers/Clinics";
 import Fashion from "./containers/Fashion";
 import Fitness from "./containers/Fitness";
@@ -29,7 +28,6 @@ function App() {
         <Switch>
           <Route exact path="/" component={Splash} />
           <Route exact path="/about" component={About} />
-          <Route exact path ="/api" component={APIPage} />
           <Route exact path="/clinics" component={Clinics} />
           <Route exact path="/fashion" component={Fashion} />
           <Route exact path="/fitness" component={Fitness} />

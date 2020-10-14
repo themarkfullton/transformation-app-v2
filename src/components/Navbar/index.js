@@ -114,20 +114,8 @@ class Navbar extends React.Component {
                   Travel Resources
                 </NavLink>
                         </li>
-                        
-                                      <li
-                className={this.state.open ? "menuNavItem open" : "menuNavItem"}
-              >
-                <NavLink
-                  to="/api"
-                  className="menuNavLink"
-                  onClick={this.toggleMenu}
-                >
-                  Using the API
-                </NavLink>
-              </li>
 
-                                      <li
+                        <li
                 className={this.state.open ? "menuNavItem open" : "menuNavItem"}
               >
                 <NavLink

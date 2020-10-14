@@ -18,7 +18,8 @@ class History extends React.Component {
             <div className="resourceWrapper">
                 <Resource
                     title="History"
-                    slogan="History Slogan Here"
+                    slogan="Be proud of your roots; stories of the transgender community that came
+        before us."
                     resources={this.state.resources} />
             </div>
         )

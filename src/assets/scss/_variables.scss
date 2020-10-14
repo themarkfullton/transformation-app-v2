@@ -16,8 +16,9 @@ $link-highlight: #06d2fd;
   font-variant: small-caps;
   font-weight: bolder;
   color: $link-colour;
-  letter-spacing: 0.2em;
-  @include fluid-type(320px, 1200px, 40px, 60px);
+  line-height: 1.2em;
+  letter-spacing: 0.1em;
+  @include fluid-type(320px, 1200px, 30px, 60px);
   @include transition-time;
 }
 

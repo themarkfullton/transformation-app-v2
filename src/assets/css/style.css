@@ -251,6 +251,33 @@
   }
 }
 
+.aboutWrapper h3 {
+  font-family: "Candal", sans-serif;
+  font-variant: small-caps;
+  letter-spacing: 0.15em;
+  color: #06d2fd;
+  padding-bottom: 5px;
+  border-bottom: #06d2fd dotted 2px;
+  margin-bottom: 10px;
+  margin-top: 50px;
+}
+
+.aboutWrapper h3 {
+  font-size: 25px;
+}
+
+@media screen and (min-width: 320px) {
+  .aboutWrapper h3 {
+    font-size: calc( 25px + 5 * ((100vw - 320px) / 880));
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .aboutWrapper h3 {
+    font-size: 30px;
+  }
+}
+
 .clinicPage {
   width: 100%;
 }
@@ -639,18 +666,19 @@ h1 {
   font-variant: small-caps;
   font-weight: bolder;
   color: #ff33cd;
-  letter-spacing: 0.2em;
+  line-height: 1.2em;
+  letter-spacing: 0.1em;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 30px;
 }
 
 @media screen and (min-width: 320px) {
   h1 {
-    font-size: calc( 40px + 20 * ((100vw - 320px) / 880));
+    font-size: calc( 30px + 30 * ((100vw - 320px) / 880));
   }
 }
 
@@ -680,6 +708,10 @@ h2 {
   h2 {
     font-size: 30px;
   }
+}
+
+p {
+  margin: 0.7em 0;
 }
 
 @media (max-width: 900px) {

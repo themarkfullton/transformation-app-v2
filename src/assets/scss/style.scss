@@ -1,4 +1,4 @@
-@import "variables", "navbar", "news", "clinics", "resource";
+@import "variables", "navbar", "news", "about", "clinics", "resource";
 
 .App {
   width: 100vw;
@@ -18,6 +18,10 @@ h1 {
 
 h2 {
   @include subheader-text;
+}
+
+p {
+  margin: 0.7em 0;
 }
 
 @media (max-width: 900px) {

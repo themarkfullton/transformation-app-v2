@@ -18,7 +18,7 @@ class Fitness extends React.Component {
             <div className="resourceWrapper">
                 <Resource
                     title="Fitness"
-                    slogan="Fitness Slogan Here"
+                    slogan="Make sure that your final form is fit and healthy!"
                     resources={this.state.resources} />
             </div>
         )

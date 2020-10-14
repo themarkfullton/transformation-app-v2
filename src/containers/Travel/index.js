@@ -18,7 +18,7 @@ class Travel extends React.Component {
             <div className="resourceWrapper">
                 <Resource
                     title="Travel"
-                    slogan="Travel Slogan Here"
+                    slogan="See the world; let the world see you."
                     resources={this.state.resources} />
             </div>
         )
