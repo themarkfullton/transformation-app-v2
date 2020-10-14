@@ -19,11 +19,11 @@
     font-variant: small-caps;
     color: $link-colour;
     @include transition-time;
-    @include fluid-type(320px, 1200px, 16px, 25px);
+    @include fluid-type(320px, 1200px, 30px, 40px);
 
     &:hover {
       color: $link-highlight;
-      @include fluid-type(320px, 1200px, 25px, 30px);
+      @include fluid-type(320px, 1200px, 40px, 50px);
     }
 
     &.open {

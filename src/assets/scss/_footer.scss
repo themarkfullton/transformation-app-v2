@@ -1,0 +1,19 @@
+.footer {
+  margin-top: 15vh;
+  background-color: $link-colour;
+  height: 50vh;
+  width: 100%;
+  color: $background-colour;
+
+  .footerContainer {
+    .titleContainer {
+      margin: 5vh;
+      padding-top: 5vh;
+      border-bottom: 2px $background-colour dotted;
+      h2 {
+        font-family: $title-font;
+        font-variant: small-caps;
+      }
+    }
+  }
+}

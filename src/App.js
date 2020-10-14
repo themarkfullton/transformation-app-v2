@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 //==========| Components \===================>
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 //==========| Containers \===================>
 import Splash from "./containers/Splash";
@@ -38,6 +39,7 @@ function App() {
           </Switch>
           </div>
       </Router>
+      <Footer />
     </div>
   );
 }
