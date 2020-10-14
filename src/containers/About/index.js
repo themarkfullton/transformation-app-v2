@@ -17,6 +17,8 @@ class About extends React.Component {
 
                 <h3>Using the API</h3>
                 <p>As stated above, the API is currently read only; but please do feel free to use it!</p>
+
+                <p>If you encounter any errors, please feel free to add it as an issue on our <a href="https://github.com/themarkfullton/transformation-api-v2" target="_blank">GitHub repo</a>.</p>
                 
                 <APIInstructions />
             </div>

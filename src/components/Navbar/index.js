@@ -125,6 +125,18 @@ class Navbar extends React.Component {
                 >
                   About Transformation
                 </NavLink>
+                </li>
+                
+                <li
+                className={this.state.open ? "menuNavItem open" : "menuNavItem"}
+              >
+                <NavLink
+                  to="/suggest"
+                  className="menuNavLink"
+                  onClick={this.toggleMenu}
+                >
+                  Suggest a Resource
+                </NavLink>
               </li>
 
               <li
