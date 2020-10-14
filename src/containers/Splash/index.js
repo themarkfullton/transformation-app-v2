@@ -16,6 +16,7 @@ class Splash extends React.Component {
     render() {
         return (
             <div className="splashWrapper">
+                <h1>News</h1>
                 <NewsBlock
                     resources={this.state.resources} />
             </div>

@@ -29,11 +29,11 @@ const Resource = (props) => {
                     return (
                         <div className="newsContainer">
                             <div className="newsTitleContainer">
-                                <p>{resource.title}</p>
+                                <h3>{resource.title}</h3>
                             </div>
                             <div className="newsSubHeadCont">
-                                <p>{resource.author}</p>
-                                <p>{resource.dateAdded}</p>
+                                <div>{resource.author}</div>
+                                <div className="dateText">{resource.dateAdded}</div>
                             </div>
                             <div className="newsContentContainer">
                                 <p>{resource.content}</p>

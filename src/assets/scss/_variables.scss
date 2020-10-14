@@ -5,28 +5,13 @@ $body-font: "Montserrat", sans-serif;
 $background-colour: #fff;
 $link-colour: #ff33cd;
 $link-highlight: #06d2fd;
-$logo-subheader-colour: #551a8b;
-
-@mixin blue-to-pink-bg() {
-  background-image: linear-gradient(to right, $link-colour, $link-highlight);
-}
 
 @mixin transition-time() {
   transition: all 0.5s;
 }
 
-@mixin just-the-gradient(
-  $direction: 180deg,
-  $colour-from: $link-highlight,
-  $colour-to: $link-color
-) {
-  background: -webkit-linear-gradient($direction, $colour-from, $colour-to);
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-}
-
 @mixin header-text() {
-  margin: 0.85rem 0;
+  margin: 2rem 0;
   font-family: $title-font;
   font-variant: small-caps;
   font-weight: bolder;
@@ -46,7 +31,7 @@ $logo-subheader-colour: #551a8b;
 @mixin body-text() {
   @include fluid-type(320px, 1200px, 16px, 24px);
   font-family: $body-font;
-  line-height: 1.8em;
+  line-height: 1.5em;
 }
 
 @function strip-unit($value) {

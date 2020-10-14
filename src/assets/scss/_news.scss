@@ -1,0 +1,38 @@
+.newsBlockWrapper {
+  width: 100%;
+
+  .newsContainer {
+    width: 100%;
+
+    .newsTitleContainer {
+      font-family: $title-font;
+      font-variant: small-caps;
+      letter-spacing: 0.15em;
+      color: $link-colour;
+      @include fluid-type(320px, 1200px, 25px, 30px);
+      padding-bottom: 5px;
+      border-bottom: $link-colour dotted 2px;
+      margin-bottom: 10px;
+    }
+
+    .newsSubHeadCont {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      font-weight: bolder;
+      font-variant: small-caps;
+      @include fluid-type(320px, 1200px, 18px, 22px);
+      margin-bottom: 20px;
+      color: $link-colour;
+
+      .dateText {
+        color: #fdb0c0;
+        font-weight: normal;
+      }
+    }
+
+    .newsContentContainer {
+      @include fluid-type(320px, 1200px, 16px, 20px);
+    }
+  }
+}

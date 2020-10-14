@@ -1,4 +1,4 @@
-@import "variables", "navbar", "clinics";
+@import "variables", "navbar", "news", "clinics", "resource";
 
 .App {
   width: 100vw;
@@ -14,10 +14,6 @@
 
 h1 {
   @include header-text;
-
-  &:hover {
-    color: $link-highlight;
-  }
 }
 
 h2 {

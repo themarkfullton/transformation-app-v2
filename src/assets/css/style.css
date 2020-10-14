@@ -10,7 +10,7 @@
   position: absolute;
   display: inline;
   z-index: 9;
-  right: 6rem;
+  right: 2rem;
   top: 0rem;
   width: 20vw;
   padding: 0.5vw 0;
@@ -166,6 +166,91 @@
   }
 }
 
+.newsBlockWrapper {
+  width: 100%;
+}
+
+.newsBlockWrapper .newsContainer {
+  width: 100%;
+}
+
+.newsBlockWrapper .newsContainer .newsTitleContainer {
+  font-family: "Candal", sans-serif;
+  font-variant: small-caps;
+  letter-spacing: 0.15em;
+  color: #ff33cd;
+  padding-bottom: 5px;
+  border-bottom: #ff33cd dotted 2px;
+  margin-bottom: 10px;
+}
+
+.newsBlockWrapper .newsContainer .newsTitleContainer {
+  font-size: 25px;
+}
+
+@media screen and (min-width: 320px) {
+  .newsBlockWrapper .newsContainer .newsTitleContainer {
+    font-size: calc( 25px + 5 * ((100vw - 320px) / 880));
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .newsBlockWrapper .newsContainer .newsTitleContainer {
+    font-size: 30px;
+  }
+}
+
+.newsBlockWrapper .newsContainer .newsSubHeadCont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-weight: bolder;
+  font-variant: small-caps;
+  margin-bottom: 20px;
+  color: #ff33cd;
+}
+
+.newsBlockWrapper .newsContainer .newsSubHeadCont {
+  font-size: 18px;
+}
+
+@media screen and (min-width: 320px) {
+  .newsBlockWrapper .newsContainer .newsSubHeadCont {
+    font-size: calc( 18px + 4 * ((100vw - 320px) / 880));
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .newsBlockWrapper .newsContainer .newsSubHeadCont {
+    font-size: 22px;
+  }
+}
+
+.newsBlockWrapper .newsContainer .newsSubHeadCont .dateText {
+  color: #fdb0c0;
+  font-weight: normal;
+}
+
+.newsBlockWrapper .newsContainer .newsContentContainer {
+  font-size: 16px;
+}
+
+@media screen and (min-width: 320px) {
+  .newsBlockWrapper .newsContainer .newsContentContainer {
+    font-size: calc( 16px + 4 * ((100vw - 320px) / 880));
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .newsBlockWrapper .newsContainer .newsContentContainer {
+    font-size: 20px;
+  }
+}
+
 .clinicPage {
   width: 100%;
 }
@@ -182,8 +267,7 @@
   text-align: center;
   font-family: "Candal", sans-serif;
   font-variant: small-caps;
-  background-image: -webkit-gradient(linear, left top, right top, from(#ff33cd), to(#06d2fd));
-  background-image: linear-gradient(to right, #ff33cd, #06d2fd);
+  background-color: #06d2fd;
 }
 
 .clinicPage .clinicDropdown #dropdown {
@@ -206,8 +290,8 @@
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
   font-variant: normal;
-  background-color: #e0eeee;
-  color: #778899;
+  background-color: #06d2fd;
+  color: #fff;
 }
 
 .clinicPage #dropOpt {
@@ -251,6 +335,9 @@
       align-self: start;
   text-align: center;
   margin: 1vw 0.5vw 2vw 0.5vw;
+  padding-top: 5vw;
+  padding-bottom: 5vw;
+  border-top: #06d2fd dotted 2px;
 }
 
 .clinicPage .clinicsDiv .clinicContainer {
@@ -272,10 +359,8 @@
 .clinicPage .clinicsDiv .clinicContainer .clinicNameContainer {
   font-family: "Candal", sans-serif;
   font-variant: small-caps;
-  color: white;
+  color: #06d2fd;
   padding: 1vw;
-  background-image: -webkit-gradient(linear, left top, right top, from(#ff33cd), to(#06d2fd));
-  background-image: linear-gradient(to right, #ff33cd, #06d2fd);
 }
 
 .clinicPage .clinicsDiv .clinicContainer .clinicNameContainer {
@@ -381,12 +466,150 @@
   }
 }
 
+.resourcePage {
+  width: 100%;
+}
+
+.resourcePage .resourceDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.resourcePage .resourceDiv .resourceContainer {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 45%;
+          flex: 1 1 45%;
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+  text-align: center;
+  margin: 1vw 0.5vw 2vw 0.5vw;
+  padding-top: 5vw;
+  padding-bottom: 5vw;
+  border-top: #06d2fd dotted 2px;
+}
+
+.resourcePage .resourceDiv .resourceContainer {
+  font-size: 16px;
+}
+
+@media screen and (min-width: 320px) {
+  .resourcePage .resourceDiv .resourceContainer {
+    font-size: calc( 16px + 4 * ((100vw - 320px) / 880));
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .resourcePage .resourceDiv .resourceContainer {
+    font-size: 20px;
+  }
+}
+
+.resourcePage .resourceDiv .resourceContainer .resourceNameContainer {
+  font-family: "Candal", sans-serif;
+  font-variant: small-caps;
+  color: #06d2fd;
+  padding: 1vw;
+}
+
+.resourcePage .resourceDiv .resourceContainer .resourceNameContainer {
+  font-size: 22px;
+}
+
+@media screen and (min-width: 320px) {
+  .resourcePage .resourceDiv .resourceContainer .resourceNameContainer {
+    font-size: calc( 22px + 8 * ((100vw - 320px) / 880));
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .resourcePage .resourceDiv .resourceContainer .resourceNameContainer {
+    font-size: 30px;
+  }
+}
+
+.resourcePage .resourceDiv .resourceContainer .resourceImageContainer {
+  margin: 3vh auto 0;
+  width: 30%;
+  height: 30%;
+  overflow: hidden;
+  line-height: normal;
+}
+
+.resourcePage .resourceDiv .resourceContainer .resourceImageContainer img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.resourcePage .resourceDiv .resourceContainer .resourceLinkContainer {
+  margin: 10vh auto;
+}
+
+.resourcePage .resourceDiv .resourceContainer .resourceLinkContainer {
+  font-size: 18px;
+}
+
+@media screen and (min-width: 320px) {
+  .resourcePage .resourceDiv .resourceContainer .resourceLinkContainer {
+    font-size: calc( 18px + 4 * ((100vw - 320px) / 880));
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .resourcePage .resourceDiv .resourceContainer .resourceLinkContainer {
+    font-size: 22px;
+  }
+}
+
+.resourcePage .resourceDiv .resourceContainer .resourceLinkContainer a {
+  color: #ff33cd;
+  text-decoration: none;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  font-weight: bolder;
+}
+
+.resourcePage .resourceDiv .resourceContainer .resourceLinkContainer a:visited {
+  color: #ff33cd;
+}
+
+.resourcePage .resourceDiv .resourceContainer .resourceLinkContainer a:hover {
+  color: #06d2fd;
+}
+
+@media (max-width: 1000px) {
+  .resourcePage .resourceDiv {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .resourcePage .resourceDiv .resourceContainer {
+    width: 100%;
+  }
+}
+
 .App {
   width: 100vw;
   margin: 0px;
   background-color: #fff;
   font-family: "Montserrat", sans-serif;
-  line-height: 1.8em;
+  line-height: 1.5em;
 }
 
 .App {
@@ -411,7 +634,7 @@
 }
 
 h1 {
-  margin: 0.85rem 0;
+  margin: 2rem 0;
   font-family: "Candal", sans-serif;
   font-variant: small-caps;
   font-weight: bolder;
@@ -435,10 +658,6 @@ h1 {
   h1 {
     font-size: 60px;
   }
-}
-
-h1:hover {
-  color: #06d2fd;
 }
 
 h2 {
