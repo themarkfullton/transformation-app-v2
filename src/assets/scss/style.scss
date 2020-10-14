@@ -12,6 +12,18 @@
   width: 70%;
 }
 
+h1 {
+  @include header-text;
+
+  &:hover {
+    color: $link-highlight;
+  }
+}
+
+h2 {
+  @include subheader-text;
+}
+
 @media (max-width: 900px) {
   .content {
     width: 90%;

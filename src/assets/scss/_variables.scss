@@ -15,44 +15,32 @@ $logo-subheader-colour: #551a8b;
   transition: all 0.5s;
 }
 
-@mixin header-text(
-  $direction: 180deg,
-  $colour-from: #06d2fd,
-  $colour-to: #ff33cd
-) {
-  background: -webkit-linear-gradient($direction, $colour-from, $colour-to);
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  display: inline-block;
-  font-variant: small-caps;
-  font-family: $title-font;
-  line-height: normal;
-  margin-bottom: 1rem;
-}
-
-@mixin header-text-reverse(
-  $direction: 180deg,
-  $colour-from: #ff33cd,
-  $colour-to: #06d2fd
-) {
-  background: -webkit-linear-gradient($direction, $colour-from, $colour-to);
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  display: inline-block;
-  font-variant: small-caps;
-  font-family: $title-font;
-  line-height: normal;
-  margin-bottom: 1rem;
-}
-
 @mixin just-the-gradient(
   $direction: 180deg,
-  $colour-from: #06d2fd,
-  $colour-to: #ff33cd
+  $colour-from: $link-highlight,
+  $colour-to: $link-color
 ) {
   background: -webkit-linear-gradient($direction, $colour-from, $colour-to);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
+}
+
+@mixin header-text() {
+  margin: 0.85rem 0;
+  font-family: $title-font;
+  font-variant: small-caps;
+  font-weight: bolder;
+  color: $link-colour;
+  letter-spacing: 0.2em;
+  @include fluid-type(320px, 1200px, 40px, 60px);
+  @include transition-time;
+}
+
+@mixin subheader-text() {
+  margin: 0.2rem 0;
+  font-weight: bold;
+  letter-spacing: 0.15em;
+  @include fluid-type(320px, 1200px, 20px, 30px);
 }
 
 @mixin body-text() {
