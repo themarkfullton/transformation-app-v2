@@ -101,6 +101,18 @@ class Navbar extends React.Component {
                 >
                   Identity Resources
                 </NavLink>
+                </li>
+                
+                <li
+                className={this.state.open ? "menuNavItem open" : "menuNavItem"}
+              >
+                <NavLink
+                  to="/jobs"
+                  className="menuNavLink"
+                  onClick={this.toggleMenu}
+                >
+                  Job Resources
+                </NavLink>
               </li>
 
               <li

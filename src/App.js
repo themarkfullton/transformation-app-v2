@@ -14,6 +14,7 @@ import Fashion from "./containers/Fashion";
 import Fitness from "./containers/Fitness";
 import History from "./containers/History";
 import Identity from "./containers/Identity";
+import Jobs from "./containers/Jobs";
 import Travel from "./containers/Travel";
 import NotFound from "./containers/NotFound";
 
@@ -36,6 +37,7 @@ function App() {
           <Route exact path="/fitness" component={Fitness} />
           <Route exact path="/history" component={History} />
           <Route exact path="/identity" component={Identity} />
+          <Route exact path="/jobs" component={Jobs} />
           <Route exact path="/travel" component={Travel} />
           <Route component={NotFound} />
           </Switch>
