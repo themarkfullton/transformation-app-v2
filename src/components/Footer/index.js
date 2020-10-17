@@ -8,6 +8,9 @@ class Footer extends React.Component {
                     <div className="titleContainer">
                         <h2>The Transformation Project</h2>
                     </div>
+                    <div className="footerContentContainer">
+                        <p>Workds words words</p>
+                    </div>
                 </div>
             </div>
         )

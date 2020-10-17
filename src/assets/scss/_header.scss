@@ -1,0 +1,27 @@
+.headerWrapper {
+  width: 100%;
+  margin: 7vw 0 5vw 0;
+  background-color: $link-colour;
+  text-align: center;
+
+  .headerContent {
+    margin: 0 auto;
+    padding: 1vw;
+    width: 90%;
+
+    h1 {
+      margin: 1vw 0;
+      color: #fff;
+      margin-bottom: 1vw;
+      padding-bottom: 1vw;
+      border-bottom: 2px dotted $background-colour;
+    }
+
+    h2 {
+      letter-spacing: 0.05em;
+      @include fluid-type(320px, 1200px, 10px, 18px);
+      margin: 1vw 0;
+      color: $background-colour;
+    }
+  }
+}

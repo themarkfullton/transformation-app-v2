@@ -2,7 +2,8 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 //==========| Components \===================>
-import Navbar from "./components/Navbar";
+// import Navbar from "./components/Navbar";
+import Header from "./components/Header";
 import Footer from "./components/Footer";
 
 //==========| Containers \===================>
@@ -25,13 +26,13 @@ import "./assets/css/style.css";
 function App() {
   return (
     <div className="App">
-      <Router>
-        <Navbar />
+        {/* <Navbar /> */}
+        <Header />
         <div className="content">
         <Switch>
           <Route exact path="/" component={Splash} />
           <Route exact path="/about" component={About} />
-          <Route exact path="/suggest" component={Suggest} />
+          <Route exact path="/suggest" componelnt={Suggest} />
           <Route exact path="/clinics" component={Clinics} />
           <Route exact path="/fashion" component={Fashion} />
           <Route exact path="/fitness" component={Fitness} />
@@ -42,7 +43,6 @@ function App() {
           <Route component={NotFound} />
           </Switch>
           </div>
-      </Router>
       <Footer />
     </div>
   );

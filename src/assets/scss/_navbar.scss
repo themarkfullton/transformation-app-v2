@@ -17,12 +17,12 @@
     font-family: $title-font;
     font-weight: bolder;
     font-variant: small-caps;
-    color: $link-colour;
+    color: $link-highlight;
     @include transition-time;
     @include fluid-type(320px, 1200px, 30px, 40px);
 
     &:hover {
-      color: $link-highlight;
+      color: $background-colour;
       @include fluid-type(320px, 1200px, 40px, 50px);
     }
 
