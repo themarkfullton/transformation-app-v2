@@ -16,6 +16,9 @@ export default {
     getIdentity: function () {
         return axios.get("http://localhost:8080/api/identity");
     },
+    getJobs: function () {
+        return axios.get("http://localhost:8080/api/jobs");
+    },
     getTravel: function () {
         return axios.get("http://localhost:8080/api/travel");
     },
