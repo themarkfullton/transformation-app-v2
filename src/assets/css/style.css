@@ -794,14 +794,15 @@
 .footer {
   position: absolute;
   bottom: 0;
-  margin-bottom: 5vw;
+  margin-top: 0;
+  margin-bottom: 3vw;
   background-color: #ff33cd;
   width: 100%;
   color: #fff;
 }
 
 .footer .footerContainer {
-  margin: 5vh auto;
+  margin: 5vw auto 3vw auto;
   padding: 1vw;
   width: 90%;
   text-align: center;
@@ -816,19 +817,69 @@
   font-variant: small-caps;
 }
 
-.footer .footerContainer p {
-  font-size: 10px;
+.footer .footerContainer .footerContentContainer {
+  margin: 2vw auto;
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer .footerContainer .footerContentContainer {
+  font-size: 15px;
 }
 
 @media screen and (min-width: 320px) {
-  .footer .footerContainer p {
-    font-size: calc( 10px + 8 * ((100vw - 320px) / 880));
+  .footer .footerContainer .footerContentContainer {
+    font-size: calc( 15px + 5 * ((100vw - 320px) / 880));
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .footer .footerContainer p {
-    font-size: 18px;
+  .footer .footerContainer .footerContentContainer {
+    font-size: 20px;
+  }
+}
+
+.footer .footerContainer .footerContentContainer .youAreHere {
+  font-weight: bolder;
+  color: #c71585;
+}
+
+.footer .footerContainer .footerContentContainer a {
+  color: #fff;
+  font-weight: bolder;
+  text-decoration: none;
+  letter-spacing: 0.35em;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.footer .footerContainer .footerContentContainer a:hover {
+  color: #c71585;
+}
+
+.footer .footerContainer .footerCopyright {
+  font-weight: bold;
+  color: #c71585;
+}
+
+.footer .footerContainer .footerCopyright {
+  font-size: 10px;
+}
+
+@media screen and (min-width: 320px) {
+  .footer .footerContainer .footerCopyright {
+    font-size: calc( 10px + 6 * ((100vw - 320px) / 880));
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer .footerContainer .footerCopyright {
+    font-size: 16px;
   }
 }
 
@@ -836,7 +887,7 @@
   position: relative;
   width: 100vw;
   min-height: 100vh;
-  padding-bottom: 30vw;
+  padding-bottom: 33vw;
   background-color: #fff;
   font-family: "Montserrat", sans-serif;
   line-height: 1.5em;
