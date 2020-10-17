@@ -21,6 +21,8 @@ class About extends React.Component {
                 <p>If you encounter any errors, please feel free to add it as an issue on our <a href="https://github.com/themarkfullton/transformation-api-v2" target="_blank">GitHub repo</a>.</p>
                 
                 <APIInstructions />
+
+                <br />
             </div>
         )
     }

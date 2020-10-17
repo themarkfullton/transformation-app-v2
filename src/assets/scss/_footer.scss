@@ -1,24 +1,28 @@
 .footer {
-  position: relative;
+  position: absolute;
   bottom: 0;
-  margin-top: 15vh;
-  margin-bottom: 10vh;
+  margin-bottom: 5vw;
   background-color: $link-colour;
-  height: 30vh;
   width: 100%;
   color: $background-colour;
 
   .footerContainer {
-    margin: 0;
+    margin: 5vh auto;
+    padding: 1vw;
+    width: 90%;
+    text-align: center;
+
     .titleContainer {
-      margin: 5vh;
-      padding-top: 5vh;
       border-bottom: 2px $background-colour dotted;
 
       h2 {
         font-family: $title-font;
         font-variant: small-caps;
       }
+    }
+
+    p {
+      @include fluid-type(320px, 1200px, 10px, 18px);
     }
   }
 }

@@ -2,8 +2,10 @@
   "suggest", "footer";
 
 .App {
+  position: relative;
   width: 100vw;
-  margin: 0px;
+  min-height: 100vh;
+  padding-bottom: 30vw;
   background-color: $background-colour;
   @include body-text;
 }
