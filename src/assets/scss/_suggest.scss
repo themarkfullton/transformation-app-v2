@@ -1,0 +1,50 @@
+.suggestPage {
+  #contact-form {
+    width: 100%;
+
+    .form-group {
+      display: flex;
+      flex-direction: wrap;
+      width: 100%;
+      justify-content: space-between;
+      margin: 3vw auto;
+      color: $link-colour;
+      @include fluid-type(320px, 1200px, 13px, 18px);
+
+      label {
+        font-weight: bolder;
+        align-self: center;
+      }
+
+      input {
+        width: 60%;
+        padding: 1.5vw;
+        border: none;
+        background-color: $link-colour;
+        color: #fff;
+        border-radius: 5vw;
+        @include fluid-type(320px, 1200px, 13px, 18px);
+      }
+
+      select {
+        width: 60%;
+        padding: 1.5vw;
+        border: none;
+        background-color: $link-colour;
+        color: #fff;
+        border-radius: 5vw;
+        @include fluid-type(320px, 1200px, 13px, 18px);
+      }
+
+      textarea {
+        width: 60%;
+        padding: 1.8vw;
+        border: none;
+        background-color: $link-colour;
+        color: #fff;
+        border-radius: 5vw;
+        @include fluid-type(320px, 1200px, 13px, 18px);
+      }
+    }
+  }
+}

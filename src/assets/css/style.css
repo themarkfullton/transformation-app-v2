@@ -631,6 +631,124 @@
   }
 }
 
+.suggestPage #contact-form {
+  width: 100%;
+}
+
+.suggestPage #contact-form .form-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: wrap;
+          flex-direction: wrap;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 3vw auto;
+  color: #ff33cd;
+}
+
+.suggestPage #contact-form .form-group {
+  font-size: 13px;
+}
+
+@media screen and (min-width: 320px) {
+  .suggestPage #contact-form .form-group {
+    font-size: calc( 13px + 5 * ((100vw - 320px) / 880));
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .suggestPage #contact-form .form-group {
+    font-size: 18px;
+  }
+}
+
+.suggestPage #contact-form .form-group label {
+  font-weight: bolder;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.suggestPage #contact-form .form-group input {
+  width: 60%;
+  padding: 1.5vw;
+  border: none;
+  background-color: #ff33cd;
+  color: #fff;
+  border-radius: 5vw;
+}
+
+.suggestPage #contact-form .form-group input {
+  font-size: 13px;
+}
+
+@media screen and (min-width: 320px) {
+  .suggestPage #contact-form .form-group input {
+    font-size: calc( 13px + 5 * ((100vw - 320px) / 880));
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .suggestPage #contact-form .form-group input {
+    font-size: 18px;
+  }
+}
+
+.suggestPage #contact-form .form-group select {
+  width: 60%;
+  padding: 1.5vw;
+  border: none;
+  background-color: #ff33cd;
+  color: #fff;
+  border-radius: 5vw;
+}
+
+.suggestPage #contact-form .form-group select {
+  font-size: 13px;
+}
+
+@media screen and (min-width: 320px) {
+  .suggestPage #contact-form .form-group select {
+    font-size: calc( 13px + 5 * ((100vw - 320px) / 880));
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .suggestPage #contact-form .form-group select {
+    font-size: 18px;
+  }
+}
+
+.suggestPage #contact-form .form-group textarea {
+  width: 60%;
+  padding: 1.8vw;
+  border: none;
+  background-color: #ff33cd;
+  color: #fff;
+  border-radius: 5vw;
+}
+
+.suggestPage #contact-form .form-group textarea {
+  font-size: 13px;
+}
+
+@media screen and (min-width: 320px) {
+  .suggestPage #contact-form .form-group textarea {
+    font-size: calc( 13px + 5 * ((100vw - 320px) / 880));
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .suggestPage #contact-form .form-group textarea {
+    font-size: 18px;
+  }
+}
+
 .footer {
   margin-top: 15vh;
   background-color: #ff33cd;
