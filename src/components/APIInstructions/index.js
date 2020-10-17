@@ -85,6 +85,26 @@ class APIInstructions extends React.Component {
                 
                 <br />
 
+                <h2>Get Job Resources</h2>
+                <p>Send a get request to: </p>
+                    <CopyBlock
+                        text="/api/jobs"
+                        language="json"
+                        showLineNumbers={true}
+                        theme={solarizedDark}
+                        codeBlock
+                    />
+                <p>You'll receive something that looks like:</p>
+                    <CopyBlock
+                        text={jobsObject}
+                        language="json"
+                        showLineNumbers={true}
+                        theme={solarizedDark}
+                        codeBlock
+                />
+                
+                <br />
+
                 <h2>Get Travel Resources</h2>
                 <p>Send a get request to: </p>
                     <CopyBlock
@@ -159,7 +179,18 @@ var identityObject = `[
     }
     ]`;
 
-    var travelObject = `[
+var jobsObject = `[
+    {
+        "id": "5efb28c6c45c54854b12a909",
+        "name": "ID Document Center: Learn How to do Name Changes and More",
+        "source": "TransEquality",
+        "target": "Identity",
+        "description": "Learn about which documents you'll need to apply for identification changes",
+        "link": "https://transequality.org/documents"
+    }
+    ]`;
+
+var travelObject = `[
     {
         "id": "5efb3100c45c54854b12a922",
         "name": "Worst (and Safest) Places to Travel for LGBTQ",
