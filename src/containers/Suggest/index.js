@@ -64,11 +64,11 @@ class Suggest extends React.Component {
         <form id="contact-form" onSubmit={this.handleSubmit} method="POST">
           <div className="form-group">
             <label htmlFor="name">Resource Name</label>
-            <input type="text" className="form-control" value={this.state.name} onChange={this.onNameChange} />
+            <input type="text" className="form-control" value={this.state.name} onChange={this.onNameChange} required />
           </div>
           <div className="form-group">
                     <label htmlFor="exampleInputEmail1">Resource Type</label>
-                    <select id="dropdown" onChange={this.onTypeChange}>
+                    <select id="dropdown" onChange={this.onTypeChange} >
                         {ResourceTypes.map((type, idx) => {
                             return(
                                 <option id="dropOpt" key={idx} value={type.name}>{type.name}</option>

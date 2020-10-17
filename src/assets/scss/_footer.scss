@@ -1,15 +1,21 @@
 .footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
   margin-top: 15vh;
+  margin-bottom: 0;
   background-color: $link-colour;
   height: 50vh;
   width: 100%;
   color: $background-colour;
 
   .footerContainer {
+    margin: 0;
     .titleContainer {
       margin: 5vh;
       padding-top: 5vh;
       border-bottom: 2px $background-colour dotted;
+
       h2 {
         font-family: $title-font;
         font-variant: small-caps;

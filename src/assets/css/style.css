@@ -750,11 +750,19 @@
 }
 
 .footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
   margin-top: 15vh;
+  margin-bottom: 0;
   background-color: #ff33cd;
   height: 50vh;
   width: 100%;
   color: #fff;
+}
+
+.footer .footerContainer {
+  margin: 0;
 }
 
 .footer .footerContainer .titleContainer {
