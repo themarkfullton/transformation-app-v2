@@ -30,7 +30,7 @@ function App() {
         <Switch>
           <Route exact path="/" component={Splash} />
           <Route exact path="/about" component={About} />
-          <Route exact path="/suggest" componelnt={Suggest} />
+          <Route exact path="/suggest" component={Suggest} />
           <Route exact path="/clinics" component={Clinics} />
           <Route exact path="/fashion" component={Fashion} />
           <Route exact path="/fitness" component={Fitness} />
