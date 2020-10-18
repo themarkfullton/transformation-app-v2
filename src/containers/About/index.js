@@ -1,10 +1,14 @@
 import React from "react";
 import APIInstructions from "../../components/APIInstructions";
+import TransformationBanner from "../../assets/images/transformation.png";
 
 class About extends React.Component {
     render() {        
         return (
             <div className="aboutWrapper">
+                <div className="pageImage">
+                    <img className="pageImageImage" src={TransformationBanner} />
+                </div>
                 <h1>The Transformation Project</h1>
                 <h3>What is it?</h3>
                 <p>The Transformation Project seeks to transform the world into a safer place for the Trans community.</p>

@@ -968,9 +968,21 @@ p {
   margin: 0.7em 0;
 }
 
+.pageImage {
+  margin: 0 auto;
+  width: 50%;
+}
+
+.pageImage .pageImageImage {
+  height: 30vw;
+}
+
 @media (max-width: 900px) {
   .content {
     width: 90%;
+  }
+  .pageImage .pageImageImage {
+    height: 45vw;
   }
 }
 /*# sourceMappingURL=style.css.map */
