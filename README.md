@@ -4,7 +4,9 @@
 
 ### [Back End](https://github.com/themarkfullton/transformation-api-v2) (Golang)
 
-**MVP Almost Complete**
+**LINK TO LIVE** https://transformation-app-v2.herokuapp.com/
+
+**STILL UNDER CONSTRUCTION**
 
 Full Stack. Transforming the world into a safer place for the transgender community! App/API containing a variety of transgender resources (from trans-friendly clinics to information about how to change one's given name)!
 
