@@ -2,27 +2,27 @@ import axios from "axios";
 
 export default {
     getClinics: function () {
-        return axios.get("http://localhost:8080/api/clinics");
+        return axios.get("https://transformation-api-v2.herokuapp.com/api/clinics");
     },
     getFashion: function () {
-        return axios.get("http://localhost:8080/api/fashion");
+        return axios.get("https://transformation-api-v2.herokuapp.com/api/fashion");
     },
     getFitness: function () {
-        return axios.get("http://localhost:8080/api/fitness");
+        return axios.get("https://transformation-api-v2.herokuapp.com/api/fitness");
     },
     getHistory: function () {
-        return axios.get("http://localhost:8080/api/history");
+        return axios.get("https://transformation-api-v2.herokuapp.com/api/history");
     },
     getIdentity: function () {
-        return axios.get("http://localhost:8080/api/identity");
+        return axios.get("https://transformation-api-v2.herokuapp.com/api/identity");
     },
     getJobs: function () {
-        return axios.get("http://localhost:8080/api/jobs");
+        return axios.get("https://transformation-api-v2.herokuapp.com/api/jobs");
     },
     getTravel: function () {
-        return axios.get("http://localhost:8080/api/travel");
+        return axios.get("https://transformation-api-v2.herokuapp.com/api/travel");
     },
     getNews: function () {
-        return axios.get("http://localhost:8080/api/news");
+        return axios.get("https://transformation-api-v2.herokuapp.com/api/news");
     },
 }
