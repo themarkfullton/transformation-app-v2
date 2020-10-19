@@ -30,8 +30,6 @@ Finally, I hope to add a "Transgender Community" collection filled with meeting 
 
 If you're a transgender individual and you have resources you'd like to add to the API, shoot me an e-mail at the.mark.fullton@gmail.com . I'd appreciate it.
 
-**Hopefully this application makes your life at least a little easier!**
-
 ## Screenshots
 
 <img src="screenshot1.PNG">
