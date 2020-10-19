@@ -1,1 +1,1 @@
-web: node bin/boot
+web: bin/boot
