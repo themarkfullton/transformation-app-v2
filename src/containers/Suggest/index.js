@@ -46,6 +46,7 @@ class Suggest extends React.Component {
     return(
         <div className="suggestPage">
             <h1>Suggest a Resource</h1>
+            <h2>PLEASE NOTE: THIS PAGE IS STILL UNDER CONSTRUCTION</h2>
             <p>Transformation is a project made by the trans community for the trans community. Please feel free to share any trans-friendly resource you have. If approved by our moderators, it will be added to the API where others can see it as well!</p>
 
             <h2>What can I suggest?</h2>
